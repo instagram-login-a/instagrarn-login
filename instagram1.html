@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    
+        .language-container{
+            position: absolute;
+            align: center;
+            top: 5px;
+        }
+    
+       .language-select {
+            background: none;
+            border: none;
+            color: Grey;
+            font-size: 12px;
+            margin-bottom: 10px;
+            align: center;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .container {
+            text-align: center;
+            width: 350px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .input-box {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+            background-color: #0095f6;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #0077cc;
+        }
+
+        .forgot-password {
+            display: block;
+            margin: 10px 0;
+            font-size: 12px;
+            color: #00376b;
+            text-decoration: none;
+        }
+
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-container">
+        <select id="language" class="language-select">
+            <option value="en" selected>English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="hi">हिन्दी</option>
+            <option value="zh">中文</option>
+        </select>
+    </div>
+    <div>
+        <center><div class="logo"><img src="insta.jpg" width="160" height="80"></div>
+        <div class="logo">
+            <a href="https://m.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATBUQh8PLNIDkVI8MhrN9lS9ggluTA09xLhyHoFk0mHYrRlAmgQu6UE2NOhDrN92iJ_JQiI71Zcbn5kQTlXOae32-gVvZp39ngmIgYaDf52tE_1HaJG6eTOBhPUBJz83niI3Vh4z0gsx_L6N3W99SRfelvEOFdx1Ev2Qp81NU6gjAWf3FcKlV5qU9cPMDVq5VliqjSNrmvaKhV_LvIniiiGj4DHa5zY15mimYqSTJjbFbB4ODaECzAwHo6mhFk5QJELR&refsrc=deprecated"><img src="face.jpg" width="275" height="49"</div></a>
+            <div>
+                <font size="2.75" color="grey" style="normal">
+                <p id="or" >OR</p></div></center>
+        </font>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Username or Email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <a href="https://www.instagram.com/accounts/password/reset/?hl=en" class="forgot-password" align="right">Forgot password?</a>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <div class="signup" align="center">
+            Don't have an account? <a href="https://www.instagram.com/accounts/signup/phone/?hl=en">Sign up</a>
+        </div>
+            <br><br><br><br>
+            <div align="center">
+                <font size=2 align="center" color="grey">By continuing, you agree to Instagram's </font>
+            </div>
+            <div align="center">
+                <font size=2 align="center" color="grey"><b>Terms of Use</b> and <b>Privacy Policy</b></font>
+            </div>
+    </div>
+</body>
+</html>
